@@ -26,5 +26,9 @@ public class Staff extends SwimPrograms{
         return lifeguard;
     }
 
+    public String getInstructor(){
+        return instructor;
+    }
+
     
 }
