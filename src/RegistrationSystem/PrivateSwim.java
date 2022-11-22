@@ -37,4 +37,23 @@ public class PrivateSwim extends SwimPrograms {
     public boolean getPoolBooking(){
         return poolBooking;
     }
+
+    public void showPrograms() {
+
+        if (swimClub) {
+            System.out.println("Swim Club");
+        }
+
+        if (aquafit) {
+            System.out.println("Aquafit");
+        }
+
+        if (swimLessons) {
+            System.out.println("Swim Lessons");
+        }
+
+        if (poolBooking) {
+            System.out.println("Pool Booking");
+        }
+    }
 }
