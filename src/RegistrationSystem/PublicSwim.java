@@ -21,4 +21,8 @@ public class PublicSwim extends SwimPrograms {
     public boolean getRecSwim(){
         return recSwim;
     }
+
+    public boolean getLaneSwim(){
+        return laneSwim;
+    }
 }
