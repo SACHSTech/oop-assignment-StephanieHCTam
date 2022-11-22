@@ -22,7 +22,9 @@ public class Staff extends SwimPrograms{
         this.supervisor = supervisor;
     }
     
-
+    public String getLifeguard(){
+        return lifeguard;
+    }
 
     
 }
