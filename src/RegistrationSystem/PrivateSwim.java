@@ -34,4 +34,7 @@ public class PrivateSwim extends SwimPrograms {
         return swimLessons;
     }
 
+    public boolean getPoolBooking(){
+        return poolBooking;
+    }
 }
