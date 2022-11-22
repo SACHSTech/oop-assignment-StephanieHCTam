@@ -30,5 +30,8 @@ public class Staff extends SwimPrograms{
         return instructor;
     }
 
+    public String getSupervisor(){
+        return supervisor;
+    }
     
 }
