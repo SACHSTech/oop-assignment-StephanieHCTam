@@ -16,4 +16,8 @@ public class SwimPrograms extends CommunityCentre{
     public boolean getPublicSwim(){
         return publicSwim;
     }
+
+    public boolean getPrivateSwim(){
+        return privateSwim;
+    }
 }
