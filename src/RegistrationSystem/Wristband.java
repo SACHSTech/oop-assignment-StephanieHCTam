@@ -22,4 +22,7 @@ public class Wristband extends Patron{
         return yellow;
     }
 
+    public String getGreen(){
+        return green;
+    }
 }
