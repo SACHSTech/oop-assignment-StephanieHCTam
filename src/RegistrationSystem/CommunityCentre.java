@@ -32,7 +32,6 @@ public class CommunityCentre {
      * Returns address
      * @return String address
      */
-
     public String getAddress() {
         return address;
     }
