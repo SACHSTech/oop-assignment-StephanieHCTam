@@ -60,5 +60,10 @@ public class CommunityCentre {
     public int getArea() {
         return area;
     }
+
+    public String toString(){
+        return ("Pool: " + poolName);
+    }
+
     
 }
