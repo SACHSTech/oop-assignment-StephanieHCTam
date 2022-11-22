@@ -62,8 +62,8 @@ public class CommunityCentre {
     }
 
     public String toString(){
-        return ("Pool: " + poolName);
-    }
+        return ("Pool: " + poolName + ", " + address + ", " + features + ", " + area);
 
+    }
     
 }
