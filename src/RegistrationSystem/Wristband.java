@@ -12,6 +12,10 @@ public class Wristband extends Patron{
         this.red = red;
         this.yellow = yellow;
         this.green = green;
-
     }
+
+    public String getRed(){
+        return red;
+    }
+
 }
