@@ -26,4 +26,7 @@ public class PrivateSwim extends SwimPrograms {
         return swimClub;
     }
 
+    public boolean getAquafit(){
+        return aquafit;
+    }
 }
