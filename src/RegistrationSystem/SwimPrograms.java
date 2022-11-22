@@ -20,4 +20,17 @@ public class SwimPrograms extends CommunityCentre{
     public boolean getPrivateSwim(){
         return privateSwim;
     }
+
+    public void showPrograms() {
+
+        if (publicSwim) {
+            System.out.println("Public Swim: select a program");
+            System.out.println("Recreational Swim, Lane Swim");
+        }
+
+        if (privateSwim) {
+            System.out.println("Private Swim: select a program");
+            System.out.println("Swim Club, Aquafit, Swim Lessons, Pool Booking");
+        }
+    }
 }
