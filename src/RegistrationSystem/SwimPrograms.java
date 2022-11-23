@@ -1,16 +1,25 @@
 package RegistrationSystem;
-public class SwimPrograms extends CommunityCentre{
+public abstract class SwimPrograms {
 
     // Instance variables
     private boolean publicSwim;
     private boolean privateSwim;
+    private String poolName;
     
-    public SwimPrograms(String address, String poolName, String features, int area, boolean publicSwim, boolean privateSwim){
+    public SwimPrograms(String poolName, boolean publicSwim, boolean privateSwim){
         // Call to super constructor
-        super(address, poolName, features, area); 
 
+        this.poolName = poolName;
         this.publicSwim = publicSwim;
         this.privateSwim = privateSwim;
+    }
+
+    public void setPoolName(String poolName){
+        this.poolName = poolName;
+    }
+
+    public String getPoolName(){
+        return poolName;
     }
 
     public boolean getPublicSwim(){

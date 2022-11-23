@@ -25,4 +25,19 @@ public class Wristband extends Patron{
     public String getGreen(){
         return green;
     }
+
+    public void showWristband() {
+
+        super(address, poolName, features, area, publicSwim, privateSwim, name, age, email); 
+
+        if (int age < 6) {
+            System.out.println("Public Swim: select a program");
+            System.out.println("Recreational Swim, Lane Swim");
+        }
+
+        if (privateSwim) {
+            System.out.println("Private Swim: select a program");
+            System.out.println("Swim Club, Aquafit, Swim Lessons, Pool Booking");
+        }
+    }
 }
