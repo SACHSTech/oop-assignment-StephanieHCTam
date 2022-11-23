@@ -2,9 +2,9 @@ package RegistrationSystem;
 public abstract class SwimPrograms {
 
     // Instance variables
+    private String poolName;
     private boolean publicSwim;
     private boolean privateSwim;
-    private String poolName;
     
     public SwimPrograms(String poolName, boolean publicSwim, boolean privateSwim){
         // Call to super constructor
@@ -30,19 +30,8 @@ public abstract class SwimPrograms {
         return privateSwim;
     }
 
-    // abstract method to get program from subclass
-    public abstract String getProgram();
-
-    public void showPrograms() {
-
-        if (publicSwim) {
-            System.out.println("Public Swim: select a program");
-            System.out.println("Recreational Swim, Lane Swim");
-        }
-
-        if (privateSwim) {
-            System.out.println("Private Swim: select a program");
-            System.out.println("Swim Club, Aquafit, Swim Lessons, Pool Booking");
-        }
-    }
+    /**
+     * Abstract showPrograms method
+     */
+    public abstract void showPrograms();
 }
