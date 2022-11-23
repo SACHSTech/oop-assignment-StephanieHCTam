@@ -30,6 +30,9 @@ public abstract class SwimPrograms {
         return privateSwim;
     }
 
+    // abstract method to get program from subclass
+    public abstract String getProgram();
+
     public void showPrograms() {
 
         if (publicSwim) {
