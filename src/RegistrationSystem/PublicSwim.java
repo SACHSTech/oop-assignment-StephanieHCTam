@@ -12,8 +12,8 @@ public class PublicSwim extends SwimPrograms {
     private boolean recSwim;
     private boolean laneSwim;
 
-    public PublicSwim(String poolName, boolean publicSwim, boolean privateSwim, boolean recSwim, boolean laneSwim){
-        super(poolName, publicSwim, privateSwim);
+    public PublicSwim(boolean publicSwim, boolean privateSwim, boolean recSwim, boolean laneSwim){
+        super(publicSwim, privateSwim);
         this.recSwim = recSwim;
         this.laneSwim = laneSwim;
     }

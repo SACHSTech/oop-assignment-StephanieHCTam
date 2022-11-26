@@ -9,28 +9,28 @@ package RegistrationSystem;
 public class Staff extends SwimPrograms{
 
     // Instance variables
-    private String lifeguard;
-    private String instructor;
-    private String supervisor;
+    private boolean lifeguard;
+    private boolean instructor;
+    private boolean supervisor;
     
-    public Staff(String address, String poolName, String features, int area, boolean publicSwim, boolean privateSwim, String lifeguard, String instructor, String supervisor){
+    public Staff(boolean publicSwim, boolean privateSwim, boolean lifeguard, boolean instructor, boolean supervisor){
         // Call to super constructor
-        super(address, poolName, features, area, publicSwim, privateSwim); 
+        super(publicSwim, privateSwim); 
 
         this.lifeguard = lifeguard;
         this.instructor = instructor;
         this.supervisor = supervisor;
     }
     
-    public String getLifeguard(){
+    public boolean getLifeguard(){
         return lifeguard;
     }
 
-    public String getInstructor(){
+    public boolean getInstructor(){
         return instructor;
     }
 
-    public String getSupervisor(){
+    public boolean getSupervisor(){
         return supervisor;
     }
     

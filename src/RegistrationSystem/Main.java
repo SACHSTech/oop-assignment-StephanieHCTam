@@ -1,6 +1,8 @@
 package RegistrationSystem;
 import java.io.*;
 
+import junit.framework.AssertionFailedError;
+
 /**
 * Main class file, simulates system
 * A program that allows the user register for swim at community center.
@@ -14,7 +16,35 @@ public class Main {
   static BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
   public static void main(String[] args) throws IOException{
 
-    // Initialize objects      
+    // Initialize Community Centre objects
+    CommunityCentre aaniin = new CommunityCentre("5665 14th Ave", "Aaniin Pool", "Aquatics Center");
+    CommunityCentre angusGlen = new CommunityCentre("3990 Major Mackenzie Dr E", "Angus Glen Pool", "Aquatics Center");
+    CommunityCentre centennial = new CommunityCentre("8600 McCowan Rd", "Centennial Pool", "Aquatics Center");
+    CommunityCentre cornell = new CommunityCentre("3201 Bur Oak Ave", "Cornell Pool", "Aquatics Center");
+    CommunityCentre millikenMills = new CommunityCentre("7600 Kennedy Rd", "Milliken Mills Pool", "Aquatics Center");
+
+    // Initialize Public Swim objects
+    PublicSwim recSwim = new PublicSwim(true, false, true, false);
+    PublicSwim laneSwim = new PublicSwim(true, false, false, true);
+
+    // Initialize Private Swim objects
+    PrivateSwim swimClub = new PrivateSwim(false, true, true, false, false, false);
+    PrivateSwim aquafit = new PrivateSwim(false, true, false, true, false, false);
+    PrivateSwim swimLessons = new PrivateSwim(false, true, false, false, true, false);
+    PrivateSwim poolBooking = new PrivateSwim(false, true, false, false, false, true);
+
+    // Initialize Staff objects
+    Staff lifeguard = new Staff(false, false, true, false, false);
+    Staff instructor = new Staff(false, false, false, true, false);
+    Staff supervisor = new Staff(false, false, false, true, true);
+
+    // Initialize Wristband objects
+    Wristband red = new Wristband(true, false, null, 0, null, true, false, false);
+
+    Wristband yellow = new Wristband(true, false, null, 0, null, false, true, false);
+
+    Wristband green = new Wristband(true, false, null, 0, null, false, false, true);
+
 
     // Initialize variables
     String center;
@@ -48,4 +78,5 @@ public class Main {
     }
     
   }
+
 }

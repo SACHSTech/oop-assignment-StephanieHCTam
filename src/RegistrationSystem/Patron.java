@@ -19,8 +19,8 @@ public class Patron extends SwimPrograms {
      * @param age patron age
      * @param email patron's email
      */
-    public Patron(String address, String poolName, String features, int area, boolean publicSwim, boolean privateSwim, String name, int age, String email) {
-        super(address, poolName, features, area, publicSwim, privateSwim); 
+    public Patron(boolean publicSwim, boolean privateSwim, String name, int age, String email) {
+        super(publicSwim, privateSwim); 
         this.name = name;
         this.age = age;
         this.email = email;  

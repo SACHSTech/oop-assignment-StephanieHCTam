@@ -1,34 +1,35 @@
 package RegistrationSystem;
 public class Wristband extends Patron{
 
-    private String red;
-    private String yellow;
-    private String green;
+    private boolean red;
+    private boolean yellow;
+    private boolean green;
     
-    public Wristband(String address, String poolName, String features, int area, boolean publicSwim, boolean privateSwim, String name, int age, String email, String red, String yellow, String green){
+    public Wristband(boolean publicSwim, boolean privateSwim, String name, int age, String email, boolean red, boolean yellow, boolean green){
         // Call to super constructor
-        super(address, poolName, features, area, publicSwim, privateSwim, name, age, email); 
+        super(publicSwim, privateSwim, name, age, email); 
 
         this.red = red;
         this.yellow = yellow;
         this.green = green;
     }
 
-    public String getRed(){
+    public boolean getRed(){
         return red;
     }
 
-    public String getYellow(){
+    public boolean getYellow(){
         return yellow;
     }
 
-    public String getGreen(){
+    public boolean getGreen(){
         return green;
     }
 
+    /*
     public void showWristband() {
 
-        super(address, poolName, features, area, publicSwim, privateSwim, name, age, email); 
+        super(publicSwim, privateSwim, name, age, email); 
 
         if (int age < 6) {
             System.out.println("Public Swim: select a program");
@@ -40,4 +41,5 @@ public class Wristband extends Patron{
             System.out.println("Swim Club, Aquafit, Swim Lessons, Pool Booking");
         }
     }
+     */
 }

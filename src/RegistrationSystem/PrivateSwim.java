@@ -14,8 +14,8 @@ public class PrivateSwim extends SwimPrograms {
     private boolean swimLessons;
     private boolean poolBooking;
 
-    public PrivateSwim(String address, String poolName, String features, int area, boolean publicSwim, boolean privateSwim, boolean swimClub, boolean aquafit, boolean swimLessons, boolean poolBooking){
-        super(address, poolName, features, area, publicSwim, privateSwim);
+    public PrivateSwim(boolean publicSwim, boolean privateSwim, boolean swimClub, boolean aquafit, boolean swimLessons, boolean poolBooking){
+        super(publicSwim, privateSwim);
         this.swimClub = swimClub;
         this.aquafit = aquafit;
         this.swimLessons = swimLessons;

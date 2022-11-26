@@ -21,11 +21,10 @@ public class CommunityCentre {
      * @param features pool facility features
      * @param area community center area in square feet
      */
-    public CommunityCentre(String address, String poolName, String features, int area) {
+    public CommunityCentre(String address, String poolName, String features) {
         this.address = address;
         this.poolName = poolName;
         this.features = features;  
-        this.area = area; 
     }
 
     /**
@@ -52,16 +51,8 @@ public class CommunityCentre {
         return features;
     }
 
-    /**
-     * Returns community center area in square feet
-     * @return int area
-     */
-    public int getArea() {
-        return area;
-    }
-
     public String toString(){
-        return ("Pool: " + poolName + ", " + address + ", " + features + ", " + area);
+        return ("Pool: " + poolName + ", " + address + ", " + features);
 
     }
     
