@@ -3,7 +3,6 @@ package RegistrationSystem;
 /**
  * Community Center class file
  * @author S. Tam
- * 
  */
 
 public class CommunityCentre {
@@ -12,7 +11,6 @@ public class CommunityCentre {
     private String address;
     private String poolName;
     private String features;
-    private int area;
 
     /**
      * Constructor: creates new instance of Community Center
@@ -52,8 +50,7 @@ public class CommunityCentre {
     }
 
     public String toString(){
-        return ("Pool: " + poolName + ", " + address + ", " + features);
-
+        return (poolName + "; " + address + "; Features: " + features);
     }
     
 }

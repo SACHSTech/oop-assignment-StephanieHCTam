@@ -1,12 +1,12 @@
 package RegistrationSystem;
 
 /**
- * Patron class file, extends SwimPrograms
+ * Patron class file
  * @author S. Tam
  * 
  */
 
-public class Patron extends SwimPrograms {
+public abstract class Patron{
 
     // instance variables
     private String name;
@@ -19,8 +19,7 @@ public class Patron extends SwimPrograms {
      * @param age patron age
      * @param email patron's email
      */
-    public Patron(boolean publicSwim, boolean privateSwim, String name, int age, String email) {
-        super(publicSwim, privateSwim); 
+    public Patron(String name, int age, String email) {
         this.name = name;
         this.age = age;
         this.email = email;  
