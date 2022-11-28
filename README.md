@@ -1,9 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9234708&assignment_repo_type=AssignmentRepo)
 # ICS4U OOP Assignment
 
-<img src = "/Users/Cindy/github-classroom/SACHSTech/oop-assignment-StephanieHCTam/src/RegistrationSystem/SwimRegis.drawio.png">
-
-<img src = “https://drive.google.com/file/d/1iFre-ZlcMmG4jZEk2YnGo1YW1XGdTPtk/view?usp=share_link">
+<img src = "https://github.com/SACHSTech/oop-assignment-StephanieHCTam/blob/main/src/RegistrationSystem/SwimRegis.drawio.png">
 
 ---
 
