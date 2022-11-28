@@ -50,6 +50,6 @@ public class CommunityCentre {
     }
 
     public String toString(){
-        return (poolName + ": " + address + ". Features: " + features + ".");
+        return (poolName + ": " + address + "\nFeatures: " + features + ".");
     }
 }

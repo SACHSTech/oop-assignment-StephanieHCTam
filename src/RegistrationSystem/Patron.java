@@ -11,6 +11,7 @@ public abstract class Patron{
     private String name;
     private int age;
     private String email;
+    //private Wristband wristband;
 
     /**
      * Constructor: creates new instance for a patron registering a swim program
@@ -22,6 +23,7 @@ public abstract class Patron{
         this.name = name;
         this.age = age;
         this.email = email;  
+        //this.wristband = wristband;       * aggregation??
     }
 
     /**

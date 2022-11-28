@@ -14,13 +14,13 @@ public class Main {
   public static void main(String[] args) throws IOException{
 
     // Initialize Community Centre objects
-    CommunityCentre aaniin = new CommunityCentre("5665 14th Ave", "Aaniin Pool", "big pool, baby pool & splash pad, therapy pool, rock wall, sauna");
+    CommunityCentre aaniin = new CommunityCentre("\n5665 14th Ave", "Aaniin Pool", "big pool, baby pool & splash pad, therapy pool, rock wall, sauna");
 
-    CommunityCentre angusGlen = new CommunityCentre("3990 Major Mackenzie Dr E", "Angus Glen Pool", "big pool, baby pool");
+    CommunityCentre angusGlen = new CommunityCentre("\n3990 Major Mackenzie Dr E", "Angus Glen Pool", "big pool, baby pool");
 
-    CommunityCentre centennial = new CommunityCentre("8600 McCowan Rd", "Centennial Pool", "big pool, baby pool, diving tank");
+    CommunityCentre centennial = new CommunityCentre("\n8600 McCowan Rd", "Centennial Pool", "big pool, baby pool, diving tank");
 
-    CommunityCentre cornell = new CommunityCentre("3201 Bur Oak Ave", "Cornell Pool", "big pool, therapy pool, water slide & splash pad");
+    CommunityCentre cornell = new CommunityCentre("\n3201 Bur Oak Ave", "Cornell Pool", "big pool, therapy pool, water slide & splash pad");
 
     CommunityCentre panAm = new CommunityCentre("16 Main St Unionville", "Pan Am Pool", "10 lane, 50 metres tank pool, 2.5 metres deep throughout");
 
