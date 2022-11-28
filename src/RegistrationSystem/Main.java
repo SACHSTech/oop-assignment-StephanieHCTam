@@ -1,8 +1,6 @@
 package RegistrationSystem;
 import java.io.*;
 
-//import junit.framework.AssertionFailedError;
-
 /**
 * Main class file, simulates system
 * A program that allows the user register for swim at community center.
@@ -118,22 +116,22 @@ public class Main {
         if (pubSwim.equalsIgnoreCase("Recreational Swim")) {
           recSwim = true;
             if (recSwim = true){
-              System.out.println(newPatron.getName() + " is registered in " + pubSwim);
+              //System.out.println(newPatron.getName() + " is registered for Recreational Swim.");
             }
         }
 
         if (pubSwim.equalsIgnoreCase("Lane Swim")) {
           laneSwim = true;
             if (laneSwim = true){
-              System.out.println(newPatron.getName() + " is registered in " + pubSwim);
+              //System.out.println(newPatron.getName() + " is registered for Lane Swim.");
             }
         }
-
         System.out.println(" ");
+        System.out.println(name + "'s registration for " + pubSwim + " at " + center + " will be sent to " + email);
 
       }
 
-      else{
+      if (program.equalsIgnoreCase("Private")){
         System.out.println("---------- Select a Private Swim ----------");
         System.out.println("Private Swim options: ");
         System.out.println("- Swim Club");
@@ -141,40 +139,42 @@ public class Main {
         System.out.println("- Lessons");
         System.out.println("- Pool Booking");
 
+        System.out.println(" ");
         System.out.print("Enter private swim program: ");
         privSwim = keyboard.readLine();
-
-        System.out.println(" ");
 
         if (privSwim.equalsIgnoreCase("Swim Club")) {
           swimClub = true;
             if (swimClub = true){
-              System.out.println(newPatron.getName() + " is registered in " + privSwim);
+              //System.out.println(newPatron.getName() + " is registered for Swim Club.");
             }
         }
 
         if (privSwim.equalsIgnoreCase("Aquafit")) {
           aquafit = true;
             if (aquafit = true){
-              System.out.println(newPatron.getName() + " is registered in " + privSwim);
+              //System.out.println(newPatron.getName() + " is registered for Aquafit");
             }
         }
 
         if (privSwim.equalsIgnoreCase("Lessons")) {
           swimLessons = true;
             if (swimLessons = true){
-              System.out.println(newPatron.getName() + " is registered in " + privSwim);
+              //System.out.println(newPatron.getName() + " is registered for Lessons.");
             }
         }
 
         if (privSwim.equalsIgnoreCase("Pool Booking")) {
           poolBooking = true;
             if (poolBooking = true){
-              System.out.println(newPatron.getName() + " is registered in " + poolBooking);
+              //System.out.println(newPatron.getName() + " is registered for Pool Booking.");
             }
         }
-
+        System.out.println(" ");
+        System.out.println(name + "'s registration for " + privSwim + " at " + center + " will be sent to " + email);
       }
+
+      
     
   }
 
