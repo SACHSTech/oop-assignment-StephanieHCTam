@@ -168,11 +168,11 @@ public class Main {
       }
 
       System.out.println("---------- Get a Wristband ----------");
-
-      if (newPatron.getAge() < 6){
-        newPatron.showWristband();
-      }
+      System.out.println(newPatron.getName() + ": " + newPatron.getAge() + " --> ");
+      newPatron.showWristband();
     
+      
+
   }
 
 }
