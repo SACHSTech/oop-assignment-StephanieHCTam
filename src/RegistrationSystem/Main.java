@@ -13,16 +13,19 @@ public class Main {
   static BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
   public static void main(String[] args) throws IOException{
 
+    // Initialize community center addresses
+    Address aaniinAddr = new Address(5665, "14th Ave");
+    Address angusGlenAddr = new Address(3990, "Major Mackenzie Dr E");
+    Address centennialAddr = new Address(8600, "McCowan Rd");
+    Address cornellAddr = new Address(3201, "Bur Oak Ave");
+    Address panAmAddr = new Address(16, "Main St Unionville");
+
     // Initialize Community Centre objects
-    CommunityCentre aaniin = new CommunityCentre("\n5665 14th Ave", "Aaniin Pool", "big pool, baby pool & splash pad, therapy pool, rock wall, sauna");
-
-    CommunityCentre angusGlen = new CommunityCentre("\n3990 Major Mackenzie Dr E", "Angus Glen Pool", "big pool, baby pool");
-
-    CommunityCentre centennial = new CommunityCentre("\n8600 McCowan Rd", "Centennial Pool", "big pool, baby pool, diving tank");
-
-    CommunityCentre cornell = new CommunityCentre("\n3201 Bur Oak Ave", "Cornell Pool", "big pool, therapy pool, water slide & splash pad");
-
-    CommunityCentre panAm = new CommunityCentre("16 Main St Unionville", "Pan Am Pool", "10 lane, 50 metres tank pool, 2.5 metres deep throughout");
+    CommunityCentre aaniin = new CommunityCentre(aaniinAddr, "Aaniin Pool", "big pool, baby pool & splash pad, therapy pool, rock wall, sauna");
+    CommunityCentre angusGlen = new CommunityCentre(angusGlenAddr, "Angus Glen Pool", "big pool, baby pool");
+    CommunityCentre centennial = new CommunityCentre(centennialAddr, "Centennial Pool", "big pool, baby pool, diving tank");
+    CommunityCentre cornell = new CommunityCentre(cornellAddr, "Cornell Pool", "big pool, therapy pool, water slide & splash pad");
+    CommunityCentre panAm = new CommunityCentre(panAmAddr, "Pan Am Pool", "10 lane, 50 metres tank pool, 2.5 metres deep throughout");
 
     Staff neededStaff = new Staff(false, false, false, true, false);
 
