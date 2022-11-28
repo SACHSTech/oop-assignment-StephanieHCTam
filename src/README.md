@@ -2,7 +2,7 @@ All .java source code files go here.
 
 # ICS4U OOP Assignment
 
-<img src = "/Users/Cindy/github-classroom/SACHSTech/oop-assignment-StephanieHCTam/src/RegistrationSystem/SwimRegis.drawio.png">
+<img src = "https://github.com/SACHSTech/oop-assignment-StephanieHCTam/blob/main/src/RegistrationSystem/SwimRegis.drawio.png">
 
 ---
 
