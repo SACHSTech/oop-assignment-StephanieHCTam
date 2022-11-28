@@ -50,13 +50,20 @@ public abstract class Patron{
     }
 
     /**
-     * Setter method for the patron's name
+     * Setter method for patron's name
      * @param name a new name
      */
     public void setName(String name){
         this.name = name;
     }
 
+    /**
+     * Setter method for patrons's age
+     * @param age a new age
+     */
+    public void setPassword(int age){
+        this.age = age;
+    }
 
 
     public abstract void showWristband();
