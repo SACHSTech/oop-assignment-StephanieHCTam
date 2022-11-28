@@ -17,4 +17,13 @@ public abstract class SwimPrograms {
     public boolean getPrivateSwim(){
         return privateSwim;
     }
+
+    /**
+     * Setter method for public swim
+     * @param publicSwim public swim boolean
+     */
+    public void setPubSwim(boolean publicSwim){
+        this.publicSwim = publicSwim;
+    }
+
 }

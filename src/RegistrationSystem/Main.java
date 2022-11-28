@@ -170,8 +170,12 @@ public class Main {
       System.out.println("---------- Get a Wristband ----------");
       System.out.println(newPatron.getName() + ": " + newPatron.getAge() + " --> ");
       newPatron.showWristband();
+      System.out.println(" ");
     
-      
+      System.out.println("---------- Staff Needed ----------");
+
+      if (recSwim = true){
+      }
 
   }
 

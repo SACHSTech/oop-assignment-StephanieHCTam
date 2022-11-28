@@ -30,6 +30,14 @@ public class Staff extends SwimPrograms{
     }
     */
     
+    public boolean getPublicSwim(){
+        return super.getPublicSwim();
+    }
+
+    public boolean getPrivateSwim(){
+        return super.getPrivateSwim();
+    }
+    
     public boolean getLifeguard(){
         return lifeguard;
     }
@@ -42,4 +50,19 @@ public class Staff extends SwimPrograms{
         return supervisor;
     }
     
+    public void showStaff() {
+
+        if (getPublicSwim() = true) {
+            lifeguard = true;
+            supervisor = true;
+            System.out.println("Lifeguards and Supervisor needed.");
+        }
+
+        if (getPrivateSwim() = true) {
+            instructor = true;
+            supervisor = true;
+            System.out.println("Instructor and Supervisor needed.");
+        }
+    }
+
 }
