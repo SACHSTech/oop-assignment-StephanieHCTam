@@ -73,5 +73,9 @@ public abstract class Patron{
         this.email = email;
     }
 
+    public String toString(){
+        return "Name: " + name + "age: " + age + "email: " + email;
+    }
+
     public abstract void showWristband();
 }

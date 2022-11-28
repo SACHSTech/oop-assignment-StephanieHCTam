@@ -3,7 +3,7 @@ import java.io.*;
 
 /**
 * Main class file, simulates system
-* A program that allows the user register for swim at community center.
+* A program that allows the user register for swimm programs at chosen community center.
 * @author: S. Tam
 */
 
@@ -115,14 +115,12 @@ public class Main {
         if (pubSwim.equalsIgnoreCase("Recreational Swim")) {
           recSwim = true;
             if (recSwim = true){
-              //System.out.println(newPatron.getName() + " is registered for Recreational Swim.");
             }
         }
 
         if (pubSwim.equalsIgnoreCase("Lane Swim")) {
           laneSwim = true;
             if (laneSwim = true){
-              //System.out.println(newPatron.getName() + " is registered for Lane Swim.");
             }
         }
         System.out.println(" ");
@@ -145,28 +143,24 @@ public class Main {
         if (privSwim.equalsIgnoreCase("Swim Club")) {
           swimClub = true;
             if (swimClub = true){
-              //System.out.println(newPatron.getName() + " is registered for Swim Club.");
             }
         }
 
         if (privSwim.equalsIgnoreCase("Aquafit")) {
           aquafit = true;
             if (aquafit = true){
-              //System.out.println(newPatron.getName() + " is registered for Aquafit");
             }
         }
 
         if (privSwim.equalsIgnoreCase("Lessons")) {
           swimLessons = true;
             if (swimLessons = true){
-              //System.out.println(newPatron.getName() + " is registered for Lessons.");
             }
         }
 
         if (privSwim.equalsIgnoreCase("Pool Booking")) {
           poolBooking = true;
             if (poolBooking = true){
-              //System.out.println(newPatron.getName() + " is registered for Pool Booking.");
             }
         }
         System.out.println(" ");

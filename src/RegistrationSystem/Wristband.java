@@ -30,7 +30,6 @@ public class Wristband extends Patron{
         return green;
     }
 
-
     public void showWristband() {
 
         if (getAge() < 6) {
