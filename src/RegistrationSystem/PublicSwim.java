@@ -25,17 +25,4 @@ public class PublicSwim extends SwimPrograms {
     public boolean getLaneSwim(){
         return laneSwim;
     }
-
-    /* 
-    public void showPrograms() {
-
-        if (recSwim) {
-            System.out.println("Recreational Swim");
-        }
-
-        if (laneSwim) {
-            System.out.println("Lane Swim");
-        }
-    }
-    */
 }

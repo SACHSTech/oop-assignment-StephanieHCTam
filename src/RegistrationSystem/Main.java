@@ -32,6 +32,10 @@ public class Main {
     String pubSwim;
     String privSwim;
 
+    boolean publicSwim = false;
+    boolean privateSwim = false;
+
+    /* 
     boolean recSwim = false;
     boolean laneSwim = false;
 
@@ -39,6 +43,7 @@ public class Main {
     boolean aquafit = false;
     boolean swimLessons = false;
     boolean poolBooking = false;
+    */
 
     // Starting interface that asks for a community center and swim program
     System.out.println(" ");
@@ -56,9 +61,9 @@ public class Main {
     String email = keyboard.readLine();
 
     // Create patron object with user input
-    Patron newPatron = new Patron(name, age, email);
+    //Patron newPatron = new Patron(name, age, email);
 
-    System.out.println("Hello " +  newPatron.getName() + "!");
+    //System.out.println("Hello " +  newPatron.getName() + "!");
 
     System.out.println(" ");
     System.out.println("---------- Choose a Pool ----------");
@@ -105,6 +110,7 @@ public class Main {
     System.out.println(" ");
 
       if (program.equalsIgnoreCase("Public")){
+        publicSwim = true;
         System.out.println("---------- Select a Public Swim ----------");
         System.out.println("Public Swim options: ");
         System.out.println("- Recreational Swim");
@@ -114,23 +120,28 @@ public class Main {
         System.out.print("Enter public swim program: ");
         pubSwim = keyboard.readLine();
         
+        /* 
         if (pubSwim.equalsIgnoreCase("Recreational Swim")) {
           recSwim = true;
             if (recSwim = true){
+              neededStaff.showStaff();
             }
         }
 
         if (pubSwim.equalsIgnoreCase("Lane Swim")) {
           laneSwim = true;
             if (laneSwim = true){
+              neededStaff.showStaff();
             }
         }
+        */
+
         System.out.println(" ");
         System.out.println(name + "'s registration for " + pubSwim + " at " + center + " will be sent to " + email);
-
       }
 
       if (program.equalsIgnoreCase("Private")){
+        privateSwim = true;
         System.out.println("---------- Select a Private Swim ----------");
         System.out.println("Private Swim options: ");
         System.out.println("- Swim Club");
@@ -142,36 +153,43 @@ public class Main {
         System.out.print("Enter private swim program: ");
         privSwim = keyboard.readLine();
 
+        /* 
         if (privSwim.equalsIgnoreCase("Swim Club")) {
           swimClub = true;
             if (swimClub = true){
+              neededStaff.showStaff();
             }
         }
 
         if (privSwim.equalsIgnoreCase("Aquafit")) {
           aquafit = true;
             if (aquafit = true){
+              neededStaff.showStaff();
             }
         }
 
         if (privSwim.equalsIgnoreCase("Lessons")) {
           swimLessons = true;
             if (swimLessons = true){
+              neededStaff.showStaff();
             }
         }
 
         if (privSwim.equalsIgnoreCase("Pool Booking")) {
           poolBooking = true;
             if (poolBooking = true){
+              neededStaff.showStaff();
             }
         }
+        */
         System.out.println(" ");
         System.out.println(name + "'s registration for " + privSwim + " at " + center + " will be sent to " + email);
+        System.out.println(" ");
       }
 
       System.out.println("---------- Get a Wristband ----------");
-      System.out.println(newPatron.getName() + ": " + newPatron.getAge() + " --> ");
-      newPatron.showWristband();
+      //System.out.println(newPatron.getName() + ": " + newPatron.getAge() + " --> ");
+      //newPatron.showWristband();
       System.out.println(" ");
     
       System.out.println("---------- Staff Needed ----------");
