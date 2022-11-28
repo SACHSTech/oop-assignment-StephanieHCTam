@@ -65,6 +65,13 @@ public abstract class Patron{
         this.age = age;
     }
 
+    /**
+     * Setter method for patrons's email
+     * @param email a new email
+     */
+    public void setEmail(String email){
+        this.email = email;
+    }
 
     public abstract void showWristband();
 }
