@@ -26,26 +26,19 @@ public class Main {
 
     CommunityCentre panAm = new CommunityCentre("16 Main St Unionville", "Pan Am Pool", "10 lane, 50 metres tank pool, 2.5 metres deep throughout");
 
-    // Initialize Public Swim objects
-    PublicSwim recSwim = new PublicSwim(true, false, true, false);
-    PublicSwim laneSwim = new PublicSwim(true, false, false, true);
-
-    // Initialize Private Swim objects
-    PrivateSwim swimClub = new PrivateSwim(false, true, true, false, false, false);
-    PrivateSwim aquafit = new PrivateSwim(false, true, false, true, false, false);
-    PrivateSwim swimLessons = new PrivateSwim(false, true, false, false, true, false);
-    PrivateSwim poolBooking = new PrivateSwim(false, true, false, false, false, true);
-
-    // Initialize Staff objects
-    Staff lifeguard = new Staff(false, false, true, false, false);
-    Staff instructor = new Staff(false, false, false, true, false);
-    Staff supervisor = new Staff(false, false, false, true, true);
-
     // Initialize variables
     String center;
     String program;
     String pubSwim;
     String privSwim;
+
+    boolean recSwim = false;
+    boolean laneSwim = false;
+
+    boolean swimClub = false;
+    boolean aquafit = false;
+    boolean swimLessons = false;
+    boolean poolBooking = false;
 
     // Starting interface that asks for a community center and swim program
     System.out.println(" ");
@@ -110,33 +103,78 @@ public class Main {
 
     System.out.print("Public or Private: ");
     program = keyboard.readLine();
+    System.out.println(" ");
 
       if (program.equalsIgnoreCase("Public")){
         System.out.println("---------- Select a Public Swim ----------");
         System.out.println("Public Swim options: ");
         System.out.println("- Recreational Swim");
         System.out.println("- Lane Swim");
+        System.out.println(" ");
 
-        System.out.println("Enter public swim program: ");
+        System.out.print("Enter public swim program: ");
         pubSwim = keyboard.readLine();
+        
+        if (pubSwim.equalsIgnoreCase("Recreational Swim")) {
+          recSwim = true;
+            if (recSwim = true){
+              System.out.println(newPatron.getName() + " is registered in " + pubSwim);
+            }
+        }
+
+        if (pubSwim.equalsIgnoreCase("Lane Swim")) {
+          laneSwim = true;
+            if (laneSwim = true){
+              System.out.println(newPatron.getName() + " is registered in " + pubSwim);
+            }
+        }
+
+        System.out.println(" ");
+
       }
+
       else{
         System.out.println("---------- Select a Private Swim ----------");
-        recSwim.showPrograms();
-        System.out.println(" ");
-        System.out.println(" ");
         System.out.println("Private Swim options: ");
         System.out.println("- Swim Club");
         System.out.println("- Aquafit");
         System.out.println("- Lessons");
         System.out.println("- Pool Booking");
 
-        System.out.println("Enter private swim program: ");
+        System.out.print("Enter private swim program: ");
         privSwim = keyboard.readLine();
 
-        System.out.println(newPatron.getName() + "is registered in " + privSwim);
+        System.out.println(" ");
+
+        if (privSwim.equalsIgnoreCase("Swim Club")) {
+          swimClub = true;
+            if (swimClub = true){
+              System.out.println(newPatron.getName() + " is registered in " + privSwim);
+            }
+        }
+
+        if (privSwim.equalsIgnoreCase("Aquafit")) {
+          aquafit = true;
+            if (aquafit = true){
+              System.out.println(newPatron.getName() + " is registered in " + privSwim);
+            }
+        }
+
+        if (privSwim.equalsIgnoreCase("Lessons")) {
+          swimLessons = true;
+            if (swimLessons = true){
+              System.out.println(newPatron.getName() + " is registered in " + privSwim);
+            }
+        }
+
+        if (privSwim.equalsIgnoreCase("Pool Booking")) {
+          poolBooking = true;
+            if (poolBooking = true){
+              System.out.println(newPatron.getName() + " is registered in " + poolBooking);
+            }
+        }
+
       }
-    
     
   }
 
