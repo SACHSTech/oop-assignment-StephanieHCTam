@@ -5,9 +5,9 @@ public class Wristband extends Patron{
     private boolean yellow;
     private boolean green;
     
-    public Wristband(boolean publicSwim, boolean privateSwim, String name, int age, String email, boolean red, boolean yellow, boolean green){
+    public Wristband(String name, int age, String email, boolean red, boolean yellow, boolean green){
         // Call to super constructor
-        super(publicSwim, privateSwim, name, age, email); 
+        super(name, age, email); 
 
         this.red = red;
         this.yellow = yellow;

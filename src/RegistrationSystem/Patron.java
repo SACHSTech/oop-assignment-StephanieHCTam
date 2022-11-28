@@ -3,7 +3,6 @@ package RegistrationSystem;
 /**
  * Patron class file
  * @author S. Tam
- * 
  */
 
 public abstract class Patron{

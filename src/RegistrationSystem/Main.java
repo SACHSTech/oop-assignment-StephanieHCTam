@@ -41,21 +41,15 @@ public class Main {
     Staff instructor = new Staff(false, false, false, true, false);
     Staff supervisor = new Staff(false, false, false, true, true);
 
-    // Initialize Wristband objects
-    Wristband red = new Wristband(true, false, null, 0, null, true, false, false);
-
-    Wristband yellow = new Wristband(true, false, null, 0, null, false, true, false);
-
-    Wristband green = new Wristband(true, false, null, 0, null, false, false, true);
-
-
     // Initialize variables
     String center;
     String program;
+    String pubSwim;
+    String privSwim;
 
     // Starting interface that asks for a community center and swim program
     System.out.println(" ");
-    System.out.println("---------- Welcome to Swim Registration! ----------");
+    System.out.println("---------- Swim Registration ----------");
     System.out.println(" ");
 
     System.out.println("Enter patron information: ");
@@ -72,6 +66,8 @@ public class Main {
     Patron newPatron = new Patron(name, age, email) {
     };
 
+    System.out.println("Hello " +  newPatron.getName() + "!");
+
     System.out.println(" ");
     System.out.println("---------- Choose a Pool ----------");
     System.out.println(" ");
@@ -85,44 +81,61 @@ public class Main {
     System.out.println("Enter the community center pool you would like to register: ");
     center = keyboard.readLine();
 
-    if (center.equals("Aaniin Pool")) {
+    if (center.equalsIgnoreCase("Aaniin Pool")) {
       System.out.println("Welcome to " + aaniin);
       System.out.println(" ");
     }
     
-    if(center.equals("Angus Glen Pool")) {
+    if(center.equalsIgnoreCase("Angus Glen Pool")) {
       System.out.println("Welcome to " + angusGlen);
       System.out.println(" ");
     }
 
-    if(center.equals("Centennial Pool")) {
+    if(center.equalsIgnoreCase("Centennial Pool")) {
       System.out.println("Welcome to " + centennial);
       System.out.println(" ");
     }
 
-    if(center.equals("Cornell Pool")) {
+    if(center.equalsIgnoreCase("Cornell Pool")) {
       System.out.println("Welcome to " + cornell);
       System.out.println(" ");
     }
 
-    if(center.equals("Pan Am Pool")) {
+    if(center.equalsIgnoreCase("Pan Am Pool")) {
       System.out.println("Welcome to " + panAm);
       System.out.println(" ");
     }
 
+    System.out.println("---------- Select a Swim Program ----------");
 
+    System.out.print("Public or Private: ");
+    program = keyboard.readLine();
 
+      if (program.equalsIgnoreCase("Public")){
+        System.out.println("---------- Select a Public Swim ----------");
+        System.out.println("Public Swim options: ");
+        System.out.println("- Recreational Swim");
+        System.out.println("- Lane Swim");
 
-      /* 
-      System.out.print("Select a swim program (Public/Private): ");
-      program = keyboard.readLine();
-        if (program.equals("Public")){
-          System.out.println("Public Swim options: ");
-          System.out.println("1| Recreational Swim");
-          System.out.println("2| Lane Swim");
-        }
+        System.out.println("Enter public swim program: ");
+        pubSwim = keyboard.readLine();
       }
-      */
+      else{
+        System.out.println("---------- Select a Private Swim ----------");
+        recSwim.showPrograms();
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("Private Swim options: ");
+        System.out.println("- Swim Club");
+        System.out.println("- Aquafit");
+        System.out.println("- Lessons");
+        System.out.println("- Pool Booking");
+
+        System.out.println("Enter private swim program: ");
+        privSwim = keyboard.readLine();
+
+        System.out.println(newPatron.getName() + "is registered in " + privSwim);
+      }
     
     
   }
