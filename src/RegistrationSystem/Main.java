@@ -24,6 +24,8 @@ public class Main {
 
     CommunityCentre panAm = new CommunityCentre("16 Main St Unionville", "Pan Am Pool", "10 lane, 50 metres tank pool, 2.5 metres deep throughout");
 
+    Staff neededStaff = new Staff(false, false, false, true, false);
+
     // Initialize variables
     String center;
     String program;
@@ -173,9 +175,7 @@ public class Main {
       System.out.println(" ");
     
       System.out.println("---------- Staff Needed ----------");
-
-      if (recSwim = true){
-      }
+      neededStaff.showStaff();
 
   }
 

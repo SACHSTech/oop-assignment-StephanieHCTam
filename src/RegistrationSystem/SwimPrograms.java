@@ -34,4 +34,6 @@ public abstract class SwimPrograms {
         this.privateSwim = privateSwim;
     }
 
+    public abstract void showStaff();
+
 }

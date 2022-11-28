@@ -52,13 +52,13 @@ public class Staff extends SwimPrograms{
     
     public void showStaff() {
 
-        if (getPublicSwim() = true) {
+        if (getPublicSwim() == true) {
             lifeguard = true;
             supervisor = true;
             System.out.println("Lifeguards and Supervisor needed.");
         }
 
-        if (getPrivateSwim() = true) {
+        if (getPrivateSwim() == true) {
             instructor = true;
             supervisor = true;
             System.out.println("Instructor and Supervisor needed.");
