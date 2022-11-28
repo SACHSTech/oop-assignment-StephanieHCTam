@@ -11,6 +11,7 @@ public class CommunityCentre {
     private String address;
     private String poolName;
     private String features;
+    //private SwimPrograms swimPrograms;
 
     /**
      * Constructor: creates new instance of Community Center
@@ -23,6 +24,7 @@ public class CommunityCentre {
         this.address = address;
         this.poolName = poolName;
         this.features = features;  
+        //this.swimPrograms = swimPrograms;  
     }
 
     /**
