@@ -8,10 +8,9 @@ package RegistrationSystem;
 public class CommunityCentre {
 
     // instance variables
-    private String address;
+    private Address address;
     private String poolName;
     private String features;
-    //private SwimPrograms swimPrograms;
 
     /**
      * Constructor: creates new instance of Community Center
@@ -20,11 +19,10 @@ public class CommunityCentre {
      * @param features pool facility features
      * @param area community center area in square feet
      */
-    public CommunityCentre(String address, String poolName, String features) {
+    public CommunityCentre(Address address, String poolName, String features) {
         this.address = address;
         this.poolName = poolName;
         this.features = features;  
-        //this.swimPrograms = swimPrograms;  
     }
 
     /**
@@ -32,7 +30,7 @@ public class CommunityCentre {
      * @return String address
      */
     public String getAddress() {
-        return address;
+        return this.address.toString();
     }
 
     /**
