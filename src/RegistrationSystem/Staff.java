@@ -21,6 +21,14 @@ public class Staff extends SwimPrograms{
         this.instructor = instructor;
         this.supervisor = supervisor;
     }
+
+    /* 
+    public String getStaff(){
+        if (super.publicSwim = true){
+            return lifeguard = true;
+        }
+    }
+    */
     
     public boolean getLifeguard(){
         return lifeguard;

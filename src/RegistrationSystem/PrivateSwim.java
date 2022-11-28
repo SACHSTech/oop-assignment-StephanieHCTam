@@ -38,14 +38,14 @@ public class PrivateSwim extends SwimPrograms {
         return poolBooking;
     }
 
+    /*
     public void showPrograms() {
 
         System.out.println("- Swim Club");
         System.out.println("- Aquafit");
         System.out.println("- Lessons");
         System.out.println("- Pool Booking");
-        
-        /*
+    
         if (swimClub) {
             System.out.println("Swim Club");
         }
@@ -61,6 +61,7 @@ public class PrivateSwim extends SwimPrograms {
         if (poolBooking) {
             System.out.println("Pool Booking");
         }
-        */
+        
     }
+    */
 }

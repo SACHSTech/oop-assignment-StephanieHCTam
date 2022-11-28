@@ -26,7 +26,7 @@ public abstract class Patron{
 
     /**
      * Returns patron's name
-     * @return String address
+     * @return String name
      */
 
     public String getName() {
@@ -48,4 +48,16 @@ public abstract class Patron{
     public String getEmail() {
         return email;
     }
+
+    /**
+     * Setter method for the patron's name
+     * @param name a new name
+     */
+    public void setName(String name){
+        this.name = name;
+    }
+
+
+
+    public abstract void showWristband();
 }

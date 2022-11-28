@@ -14,6 +14,10 @@ public class Wristband extends Patron{
         this.green = green;
     }
 
+    public int getAge(){
+        return super.getAge();
+    }
+
     public boolean getRed(){
         return red;
     }
@@ -26,20 +30,26 @@ public class Wristband extends Patron{
         return green;
     }
 
-    /*
+
     public void showWristband() {
 
-        super(publicSwim, privateSwim, name, age, email); 
-
-        if (int age < 6) {
-            System.out.println("Public Swim: select a program");
-            System.out.println("Recreational Swim, Lane Swim");
+        if (getAge() < 6) {
+            red = true;
+            System.out.println("Red Wristband");
         }
 
-        if (privateSwim) {
-            System.out.println("Private Swim: select a program");
-            System.out.println("Swim Club, Aquafit, Swim Lessons, Pool Booking");
+        if (getAge() > 7 &&  getAge() < 11) {
+            yellow = true;
+            System.out.println("Yellow Wristband");
+        }
+
+        else{
+            green = true;
+            System.out.println("Green Wristband");
         }
     }
-     */
+
+    //public String toString(){
+    //    return ("Wristband: ");
+    //}
 }

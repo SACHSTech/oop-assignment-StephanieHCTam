@@ -26,6 +26,7 @@ public class PublicSwim extends SwimPrograms {
         return laneSwim;
     }
 
+    /* 
     public void showPrograms() {
 
         if (recSwim) {
@@ -36,4 +37,5 @@ public class PublicSwim extends SwimPrograms {
             System.out.println("Lane Swim");
         }
     }
+    */
 }

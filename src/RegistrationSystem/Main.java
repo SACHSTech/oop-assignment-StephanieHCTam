@@ -54,8 +54,7 @@ public class Main {
     String email = keyboard.readLine();
 
     // Create patron object with user input
-    Patron newPatron = new Patron(name, age, email) {
-    };
+    Patron newPatron = new Patron(name, age, email);
 
     System.out.println("Hello " +  newPatron.getName() + "!");
 
@@ -174,7 +173,11 @@ public class Main {
         System.out.println(name + "'s registration for " + privSwim + " at " + center + " will be sent to " + email);
       }
 
-      
+      System.out.println("---------- Get a Wristband ----------");
+
+      if (newPatron.getAge() < 6){
+        newPatron.showWristband();
+      }
     
   }
 
