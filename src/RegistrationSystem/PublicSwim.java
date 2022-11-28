@@ -25,4 +25,15 @@ public class PublicSwim extends SwimPrograms {
     public boolean getLaneSwim(){
         return laneSwim;
     }
+
+    public void showStaff() {
+
+        if (getPublicSwim() == true) {
+            System.out.println("Lifeguards and Supervisor needed.");
+        }
+
+        if (getPrivateSwim() == true) {
+            System.out.println("Instructor and Supervisor needed.");
+        }
+    }
 }

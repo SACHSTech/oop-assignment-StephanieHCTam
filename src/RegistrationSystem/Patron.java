@@ -5,13 +5,13 @@ package RegistrationSystem;
  * @author S. Tam
  */
 
-public abstract class Patron{
+public class Patron{
 
     // instance variables
     private String name;
     private int age;
     private String email;
-    //private Wristband wristband;
+    private Wristband wristband;
 
     /**
      * Constructor: creates new instance for a patron registering a swim program
@@ -23,7 +23,7 @@ public abstract class Patron{
         this.name = name;
         this.age = age;
         this.email = email;  
-        //this.wristband = wristband;       * aggregation??
+        this.wristband = new Wristband(age);
     }
 
     /**
@@ -49,6 +49,14 @@ public abstract class Patron{
      */
     public String getEmail() {
         return email;
+    }
+
+    /**
+     * Returns patron's wristband color
+     * @return String wristbandColor
+     */
+    public String getWristbandColor() {
+        return this.wristband.getWristbandColor();
     }
 
     /**
@@ -79,5 +87,5 @@ public abstract class Patron{
         return "Name: " + name + "age: " + age + "email: " + email;
     }
 
-    public abstract void showWristband();
+    //public abstract void showWristband();
 }

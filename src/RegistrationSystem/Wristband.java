@@ -1,54 +1,26 @@
 package RegistrationSystem;
-public class Wristband extends Patron{
+public class Wristband{
 
-    private boolean red;
-    private boolean yellow;
-    private boolean green;
+    private String wristbandColor;
+
+    public Wristband(int age){
+
+        if (age < 6) {
+            this.wristbandColor = "Red";
+        }
     
-    public Wristband(String name, int age, String email, boolean red, boolean yellow, boolean green){
-        // Call to super constructor
-        super(name, age, email); 
-
-        this.red = red;
-        this.yellow = yellow;
-        this.green = green;
-    }
-
-    public int getAge(){
-        return super.getAge();
-    }
-
-    public boolean getRed(){
-        return red;
-    }
-
-    public boolean getYellow(){
-        return yellow;
-    }
-
-    public boolean getGreen(){
-        return green;
-    }
-
-    public void showWristband() {
-
-        if (getAge() < 6) {
-            red = true;
-            System.out.println("Red Wristband");
+        else if (age > 7 &&  age < 11) {
+            this.wristbandColor = "Yellow";
         }
-
-        if (getAge() > 7 &&  getAge() < 11) {
-            yellow = true;
-            System.out.println("Yellow Wristband");
+    
+        else {
+            this.wristbandColor = "Green";
         }
-
-        else{
-            green = true;
-            System.out.println("Green Wristband");
-        }
+    
     }
 
-    //public String toString(){
-    //    return ("Wristband: ");
-    //}
+    public String getWristbandColor(){
+        return wristbandColor;
+    }
+
 }
