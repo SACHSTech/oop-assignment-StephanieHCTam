@@ -2,7 +2,9 @@ All .java source code files go here.
 
 # ICS4U OOP Assignment
 
-<img src = "https://github.com/SACHSTech/oop-assignment-StephanieHCTam/blob/main/src/class-diagram.png">
+<img src = "/Users/Cindy/github-classroom/SACHSTech/oop-assignment-StephanieHCTam/src/RegistrationSystem/SwimRegis.drawio.png">
+
+---
 
 ## Summary
 This program models a swim registration. The user is a patron who would like to register for a swim program at a Markham Community Center. The user is prompted to input their personal information; then select: a community center pool, the type of swim program (parent classes), and the specific swim program (subclasses). 

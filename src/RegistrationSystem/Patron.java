@@ -63,7 +63,7 @@ public abstract class Patron{
      * Setter method for patrons's age
      * @param age a new age
      */
-    public void setPassword(int age){
+    public void setAge(int age){
         this.age = age;
     }
 
