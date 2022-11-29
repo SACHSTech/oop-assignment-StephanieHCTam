@@ -13,7 +13,7 @@ public class Main {
   static BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
   public static void main(String[] args) throws IOException{
 
-    // Initialize community center addresses
+    // Initialize community center Address objects
     Address aaniinAddr = new Address(5665, "14th Ave");
     Address angusGlenAddr = new Address(3990, "Major Mackenzie Dr E");
     Address centennialAddr = new Address(8600, "McCowan Rd");
@@ -38,6 +38,7 @@ public class Main {
     System.out.println("---------- Swim Registration ----------");
     System.out.println(" ");
 
+    // User input to create patron object
     System.out.println("Enter patron information: ");
     System.out.print("Name: ");
     String name = keyboard.readLine();
@@ -53,6 +54,7 @@ public class Main {
 
     System.out.println("Hello " +  newPatron.getName() + "!");
 
+    // User inputs a selected pool
     System.out.println(" ");
     System.out.println("---------- Choose a Pool ----------");
     System.out.println(" ");
@@ -66,6 +68,7 @@ public class Main {
     System.out.println("Enter the community center pool you would like to register: ");
     center = keyboard.readLine();
 
+    // The selected pool outputs pool name and features
     if (center.equalsIgnoreCase("Aaniin Pool")) {
       System.out.println("Welcome to " + aaniin);
       System.out.println(" ");
@@ -91,6 +94,7 @@ public class Main {
       System.out.println(" ");
     }
 
+    // User inputs swim program
     System.out.println("---------- Select a Swim Program ----------");
     System.out.println(" ");
 
@@ -98,6 +102,7 @@ public class Main {
     program = keyboard.readLine();
     System.out.println(" ");
 
+    // The selected public swim outputs the specific type of programs offered
     if (program.equalsIgnoreCase("Public")){
       System.out.println("---------- Select a Public Swim ----------");
       System.out.println(" ");
@@ -106,13 +111,17 @@ public class Main {
       System.out.println("- Lane Swim");
       System.out.println(" ");
 
+      // User inputs type of public swim program
       System.out.print("Enter public swim program: ");
       pubSwim = keyboard.readLine();
 
+      // Notify the patron of emailed information based on their input
       System.out.println(" ");
       System.out.println(name + "'s registration for " + pubSwim + " at " + center + " will be sent to " + email);
+      System.out.println(" ");
     }
 
+    // The selected private swim outputs the specific type of programs offered
     if (program.equalsIgnoreCase("Private")){
       System.out.println("---------- Select a Private Swim ----------");
       System.out.println(" ");
@@ -122,15 +131,18 @@ public class Main {
       System.out.println("- Lessons");
       System.out.println("- Pool Booking");
 
+      // User inputs type of private swim program
       System.out.println(" ");
       System.out.print("Enter private swim program: ");
       privSwim = keyboard.readLine();
 
+      // Notify the patron of emailed information based on their input
       System.out.println(" ");
       System.out.println(name + "'s registration for " + privSwim + " at " + center + " will be sent to " + email);
       System.out.println(" ");
     }
 
+    // Output wristband color for user
     System.out.println("---------- Get a Wristband ----------");
     System.out.println(" ");
     System.out.println(newPatron.getName() + " --> " + newPatron.getWristbandColor() + " Wristband.");
