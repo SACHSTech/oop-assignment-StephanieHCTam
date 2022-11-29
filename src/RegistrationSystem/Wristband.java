@@ -1,4 +1,10 @@
 package RegistrationSystem;
+
+/**
+ * Wristband class file
+ * @author S. Tam
+ */
+
 public class Wristband{
 
     // Instance variables
@@ -32,5 +38,4 @@ public class Wristband{
     public String getWristbandColor(){
         return wristbandColor;
     }
-
 }

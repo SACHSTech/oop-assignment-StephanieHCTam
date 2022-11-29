@@ -1,4 +1,10 @@
 package RegistrationSystem;
+
+/**
+ * Swim Program class file
+ * @author S. Tam
+ */
+
 public abstract class SwimPrograms {
 
     // Instance variables

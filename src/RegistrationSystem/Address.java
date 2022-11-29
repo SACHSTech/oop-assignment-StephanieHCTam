@@ -1,5 +1,10 @@
 package RegistrationSystem;
 
+/**
+ * Address class file
+ * @author S. Tam
+ */
+
 public class Address {
     
     // Instance variables

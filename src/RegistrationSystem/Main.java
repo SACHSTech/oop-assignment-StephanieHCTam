@@ -3,7 +3,7 @@ import java.io.*;
 
 /**
 * Main class file, simulates system
-* A program that allows the user register for swimm programs at chosen community center.
+* A program that allows the user register for swimm programs at a chosen community center.
 * @author: S. Tam
 */
 
