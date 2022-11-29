@@ -23,6 +23,7 @@ public class PrivateSwim extends SwimPrograms {
      * @param poolBooking pool booking
      */
     public PrivateSwim(boolean publicSwim, boolean privateSwim, boolean swimClub, boolean aquafit, boolean swimLessons, boolean poolBooking){
+        // calls superclass SwimPrograms
         super(publicSwim, privateSwim);
         this.swimClub = swimClub;
         this.aquafit = aquafit;
