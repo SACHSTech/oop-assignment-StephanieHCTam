@@ -65,8 +65,9 @@ public class Main {
     System.out.println("- Cornell Pool");
     System.out.println("- Pan Am Pool");
     System.out.println(" ");
-    System.out.println("Enter the community center pool you would like to register: ");
+    System.out.print("Enter the community center pool you would like to register: ");
     center = keyboard.readLine();
+    System.out.println(" ");
 
     // The selected pool outputs pool name and features
     if (center.equalsIgnoreCase("Aaniin Pool")) {
@@ -146,6 +147,12 @@ public class Main {
     System.out.println("---------- Get a Wristband ----------");
     System.out.println(" ");
     System.out.println(newPatron.getName() + " --> " + newPatron.getWristbandColor() + " Wristband.");
+    System.out.println(" ");
+
+    // Output thank you note for user
+    System.out.println(" ");
+    System.out.println("Thank you for registering!");
+    System.out.println("--------------------------------------------------------------------------");
     System.out.println(" ");
   }
 }
