@@ -7,7 +7,7 @@ package RegistrationSystem;
 
 public class Patron{
 
-    // instance variables
+    // Instance variables
     private String name;
     private int age;
     private String email;
@@ -83,9 +83,11 @@ public class Patron{
         this.email = email;
     }
 
+    /**
+     * Output user name, age, email to screen
+     * @return string representation of name, age, email
+     */
     public String toString(){
         return "Name: " + name + "age: " + age + "email: " + email;
     }
-
-    //public abstract void showWristband();
 }

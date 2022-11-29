@@ -7,7 +7,7 @@ package RegistrationSystem;
 
 public class CommunityCentre {
 
-    // instance variables
+    // Instance variables
     private Address address;
     private String poolName;
     private String features;
@@ -49,6 +49,10 @@ public class CommunityCentre {
         return features;
     }
 
+    /**
+     * Output pool name and features to screen/user
+     * @return string representation of pool name and features
+     */
     public String toString(){
         return (poolName + ": " + address + "\nFeatures: " + features + ".");
     }
