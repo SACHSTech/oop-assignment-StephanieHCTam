@@ -5,43 +5,29 @@ public abstract class SwimPrograms {
     private boolean publicSwim;
     private boolean privateSwim;
     
+    /**
+     * Swim Program constructor
+     * @param publicSwim public swim
+     * @param privateSwim private swim
+     */
     public SwimPrograms(boolean publicSwim, boolean privateSwim){
         this.publicSwim = publicSwim;
         this.privateSwim = privateSwim;
     }
 
+    /**
+     * Returns public swim
+     * @return boolean public swim
+     */
     public boolean getPublicSwim(){
         return publicSwim;
     }
 
+    /**
+     * Returns private swim
+     * @return boolean private swim
+     */
     public boolean getPrivateSwim(){
         return privateSwim;
     }
-
-    
-
-    /**
-     * Setter method for public swim
-     * @param publicSwim public swim boolean
-     */
-
-     /* 
-    public void setPublicSwim(boolean publicSwim){
-        this.publicSwim = publicSwim;
-    }
-
-    */
-
-    /**
-     * Setter method for private swim
-     * @param privateSwim private swim boolean
-     */
-
-     /* 
-    public void setPrivateSwim(boolean privateSwim){
-        this.privateSwim = privateSwim;
-    }
-
-    */
-
 }
