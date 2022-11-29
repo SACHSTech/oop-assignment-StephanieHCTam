@@ -8,9 +8,10 @@ package RegistrationSystem;
 public class CommunityCentre {
 
     // Instance variables
-    private Address address;
     private String poolName;
     private String features;
+    // Aggregation relationship with Address class
+    private Address address;
 
     /**
      * Community Center constructor
@@ -20,6 +21,7 @@ public class CommunityCentre {
      * @param area community center area in square feet
      */
     public CommunityCentre(Address address, String poolName, String features) {
+        // address object from Address class
         this.address = address;
         this.poolName = poolName;
         this.features = features;  

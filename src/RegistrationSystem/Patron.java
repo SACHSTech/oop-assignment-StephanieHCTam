@@ -11,10 +11,11 @@ public class Patron{
     private String name;
     private int age;
     private String email;
+    // Aggregation relationship with Wristband class
     private Wristband wristband;
 
     /**
-     * Constructor: creates new instance for a patron registering a swim program
+     * Constructor: creates new instance for patron registering for a swim program
      * @param name patron name
      * @param age patron age
      * @param email patron's email
@@ -23,6 +24,7 @@ public class Patron{
         this.name = name;
         this.age = age;
         this.email = email;  
+        // wristband object is determined by patrons age in Wristband class
         this.wristband = new Wristband(age);
     }
 
