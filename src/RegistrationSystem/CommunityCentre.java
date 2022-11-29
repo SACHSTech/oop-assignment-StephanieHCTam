@@ -13,7 +13,7 @@ public class CommunityCentre {
     private String features;
 
     /**
-     * Constructor: creates new instance of Community Center
+     * Community Center constructor
      * @param address community center address
      * @param poolName community center pool name
      * @param features pool facility features

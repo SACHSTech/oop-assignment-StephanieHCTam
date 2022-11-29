@@ -3,7 +3,6 @@ package RegistrationSystem;
 /**
  * PrivateSwim subclass
  * @author S. Tam
- * 
  */
 
 public class PrivateSwim extends SwimPrograms {
@@ -14,6 +13,15 @@ public class PrivateSwim extends SwimPrograms {
     private boolean swimLessons;
     private boolean poolBooking;
 
+    /**
+     * Private Swim constructor
+     * @param publicSwim public swim
+     * @param privateSwim private swim
+     * @param swimClub swim club
+     * @param aquafit aquafit
+     * @param swimLessons swim lessons
+     * @param poolBooking pool booking
+     */
     public PrivateSwim(boolean publicSwim, boolean privateSwim, boolean swimClub, boolean aquafit, boolean swimLessons, boolean poolBooking){
         super(publicSwim, privateSwim);
         this.swimClub = swimClub;
@@ -22,30 +30,35 @@ public class PrivateSwim extends SwimPrograms {
         this.poolBooking = poolBooking;
     }
 
+    /**
+     * Returns swim club
+     * @return boolean swim club
+     */
     public boolean getSwimClub(){
         return swimClub;
     }
 
+    /**
+     * Returns aquafit
+     * @return boolean aquafit
+     */
     public boolean getAquafit(){
         return aquafit;
     }
 
+    /**
+     * Returns swim lessons
+     * @return boolean swim lessons
+     */
     public boolean getSwimLessons(){
         return swimLessons;
     }
 
+    /**
+     * Returns pool booking
+     * @return boolean pool booking
+     */
     public boolean getPoolBooking(){
         return poolBooking;
-    }
-
-    public void showStaff() {
-
-        if (getPublicSwim() == true) {
-            System.out.println("Lifeguards and Supervisor needed.");
-        }
-
-        if (getPrivateSwim() == true) {
-            System.out.println("Instructor and Supervisor needed.");
-        }
     }
 }
